@@ -42,7 +42,13 @@
     function create ()
     {
         this.add.image(400,300, 'sky');
-        this.add.image(400,300, 'star');
+
+        platforms = this.physics.add.staticGroup();
+        platforms.create(400,568, 'ground'),setScale(2).refreshBody();
+
+        platforms.create(500,300, 'ground');
+        platforms.create(100,200, 'ground');
+        platforms.create(600,100, 'ground');
         
     }
 
