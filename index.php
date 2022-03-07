@@ -40,7 +40,7 @@
     var score = 0;
     var gameOver = false;
     var scoreText;
-
+    
     var game = new Phaser.Game(config);
 
     function preload ()
@@ -92,7 +92,7 @@
             repeat: -1
         });
 
-        cursors = this.input.keyboard.addKeys({up:Phaser.input.keyboard.KeyCodes.W, left:Phaser.Input.keyboard.KeyCodes.A, right:Phaser.input.keyboard.KeyCodes.D});
+        cursors = this.input.keyboard.createCursorKeys();
 
         //  Some stars to collect, 12 in total, evenly spaced 70 pixels apart along the x axis
         stars = this.physics.add.group({
