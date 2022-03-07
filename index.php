@@ -92,7 +92,7 @@
             repeat: -1
         });
 
-        this.cursors = this.input.keyboard.addKeys({up:Phaser.input.keyboard.KeyCodes.W, left:Phaser.Input.keyboard.KeyCodes.A, right:Phaser.input.keyboard.KeyCodes.D});
+        cursors = this.input.keyboard.addKeys({up:Phaser.input.keyboard.KeyCodes.W, left:Phaser.Input.keyboard.KeyCodes.A, right:Phaser.input.keyboard.KeyCodes.D});
 
         //  Some stars to collect, 12 in total, evenly spaced 70 pixels apart along the x axis
         stars = this.physics.add.group({
